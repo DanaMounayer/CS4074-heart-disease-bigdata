@@ -70,7 +70,7 @@ We simulate real-world data issues:
 | Scenario | Accuracy |
 |----------|----------|
 | Clean Data | ~0.78 |
-| Adversarial Data | ~0.85 |
+| Adversarial Data | ~0.76 |
 
 ---
 

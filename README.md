@@ -96,5 +96,13 @@ python3 spark/spark_ml.py
 python3 spark/spark_adversarial_ml.py
 
 
-
+## 📁 Project Structure
+data/
+src/
+spark/
+models/
+notebooks/
+venv/
+README.md
+requirements.txt
 

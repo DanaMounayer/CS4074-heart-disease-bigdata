@@ -1,7 +1,7 @@
 # 🫀 CS4074 - Heart Disease Big Data Pipeline
 
 ## Project Title
-**Resilient AI Pipeline for Heart Disease Detection Using Distributed Machine Learning under Adversarial Big Data Conditions**
+Resilient AI Pipeline for Heart Disease Prediction under Adversarial Big Data Conditions
 
 ---
 
@@ -12,34 +12,33 @@
 ---
 
 ## Project Overview
-This project implements a scalable big data analytics pipeline for heart disease prediction using Apache Spark and PySpark.
+This project builds a scalable big data analytics pipeline for heart disease prediction using Apache Spark (PySpark).
 
-The system simulates a real-world healthcare environment where patient data is distributed across multiple hospitals. It also introduces adversarial conditions such as noise, missing values, and label corruption to evaluate model robustness.
-
-The project follows the meta-theme:
-> **Resilient AI Pipelines in Adversarial Big Data Ecosystems**
+It simulates a real-world healthcare environment where patient data is distributed across multiple hospitals and evaluated under adversarial conditions such as noise, missing values, and label corruption.
 
 ---
 
-## Technologies Used
+## Objectives
+- Build distributed ML pipeline using Spark
+- Simulate multi-hospital healthcare data system
+- Evaluate model robustness under adversarial conditions
+- Demonstrate big data ETL pipeline design
+
+---
+
+## 🛠 Technologies Used
 - Apache Spark (PySpark)
 - Python 3.12
-- Pandas / NumPy
-- Hadoop-style distributed processing (simulated)
-- Machine Learning (Logistic Regression - Spark MLlib)
-- Ubuntu VM Environment
+- Pandas, NumPy
+- Spark MLlib (Logistic Regression)
+- Ubuntu Linux
+- Git & GitHub
 
 ---
 
-## Project Pipeline
+## Pipeline Architecture
 
-1. Data Collection (UCI Heart Disease Dataset)
-2. Data Cleaning & Preprocessing
-3. Distributed Hospital Data Simulation
-4. Feature Engineering
-5. Spark ML Model Training
-6. Adversarial Data Simulation
-7. Model Evaluation
+Data → Cleaning → Hospital Split → Spark ML → Adversarial Testing → Evaluation
 
 ---
 
@@ -73,29 +72,7 @@ We simulate real-world data issues:
 | Adversarial Data | ~0.76 |
 
 ---
-
-## How to Run the Project
-
-```bash
-# 1. Activate virtual environment
-source venv/bin/activate
-
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Run preprocessing
-python3 src/preprocessing.py
-
-# 4. Split hospitals
-python3 src/split_hospitals.py
-
-# 5. Train Spark ML model
-python3 spark/spark_ml.py
-
-# 6. Run adversarial model
-python3 spark/spark_adversarial_ml.py
-
-
+ 
 ## 📁 Project Structure
 data/
 src/
@@ -103,6 +80,28 @@ spark/
 models/
 notebooks/
 venv/
-README.md
 requirements.txt
+README.md
+---
+
+## How to Run
+
+```bash
+# activate environment
+source venv/bin/activate
+
+# install dependencies
+pip install -r requirements.txt
+
+# run preprocessing
+python3 src/preprocessing.py
+
+# split hospitals
+python3 src/split_hospitals.py
+
+# train model
+python3 spark/spark_ml.py
+
+# adversarial testing
+python3 spark/spark_adversarial_ml.py
 

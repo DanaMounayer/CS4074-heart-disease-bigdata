@@ -1,4 +1,4 @@
-# 🫀 Resilient AI Pipeline for Heart Disease Prediction under Adversarial Big Data Conditions
+# Resilient AI Pipeline for Heart Disease Prediction under Adversarial Big Data Conditions
 
 **Effat University — CS4074 Big Data Analytics**  
 Dana Mounayer · Sara Imran
